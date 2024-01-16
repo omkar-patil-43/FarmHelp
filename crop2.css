@@ -1,0 +1,72 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  .wrapper{
+    width:70%;
+  }
+  @media(max-width:992px){
+   .wrapper{
+    width:100%;
+  } 
+  }
+  .panel-body{
+      background: aliceblue;
+  }
+  .panel-heading {
+    padding: 0;
+      border:0;
+  }
+  .panel:hover{
+    box-shadow: 0px 0px 10px #444;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+  }
+  .panel-title>a, .panel-title>a:active{
+      display:block;
+      padding:15px;
+    color:rgb(241, 223, 223);
+    font-size:16px;
+    font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    word-spacing:3px;
+      text-decoration:none;
+  }
+  .panel-heading{
+      background-color:green;
+  }
+  .panel-heading  a:before {
+     font-family: 'Glyphicons Halflings';
+     content: "\e114";
+     float: right;
+     transition: all 0.5s;
+     background: rgb(255, 230, 230);
+  }
+  .panel-heading.active a:before {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
+  } 
+ 

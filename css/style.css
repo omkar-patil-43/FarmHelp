@@ -1,0 +1,44 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
+  
+  .single-video {
+    width: 18rem;
+    flex-grow: 1;
+    margin: 0.5rem;
+  }
+  
+  /* taking care of the video aspect-ratio */
+  figure {
+    position: relative;
+    padding: 0 0 56.25% 0;
+  }
+  
+  figure iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .steps{
+    background-color: #c2e59c;
+ }
+ /*  */
+ .card{
+   border:none;
+ }
+ .card-img{
+     border-radius: 50%;
+     height: 80px;
+     width: 80px;
+     border: 5px solid black;
+ }
+ .card:hover{ /* Just for styling */
+     cursor: pointer;
+     transition: 1s;
+     box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+      
+   }
+ 
